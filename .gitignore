@@ -1,0 +1,24 @@
+# Private/raw source data
+*.csv
+*.csv.gz
+
+# Local environments and caches
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+.voltrelay_scratch/
+
+# Generated analysis tables; final narrative deliverables are kept
+outputs/*.csv
+!outputs/*.md
+
+# Temporary, editor, credential, and local configuration files
+*.tmp
+*.temp
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
