@@ -42,6 +42,7 @@ These are review priorities grounded in observed patterns, not proven interventi
 ```text
 .
 ├── VoltRelay_Data_Analytics.ipynb
+├── build_notebook.py
 ├── requirements.txt
 └── outputs/
     ├── VoltRelay_Analysis_Report.md
@@ -54,10 +55,12 @@ The notebook creates an `outputs/` folder for generated analysis tables when run
 
 ## How to Run
 
-1. Install the packages in `requirements.txt` in a Python environment with Jupyter support, or open the notebook in Google Colab.
+1. Install the packages in `requirements.txt` in a Python environment with Jupyter support, or open the notebook in Google Colab. `nbformat` is included for the optional notebook-builder script.
 2. Obtain the eight official hackathon CSVs and place them in the same folder as the notebook (or upload all eight to the Colab runtime's `/content` folder). Keep the exact filenames listed below. The notebook defaults to `DATA_DIR = Path(".")`; edit that one setting if the CSVs are elsewhere.
 3. Open `VoltRelay_Data_Analytics.ipynb`.
 4. Restart the runtime/kernel and run all cells from top to bottom. The event file is large; allow time and memory for the chunked analysis.
+
+To regenerate the notebook structure from its source script, run `python build_notebook.py`.
 
 Expected files: `swap_events.csv`, `station_hourly_status.csv`, `riders.csv`, `batteries.csv`, `support_tickets.csv`, `stations.csv`, `city_daily_context.csv`, and `fleet_partners.csv`.
 

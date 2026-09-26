@@ -22,3 +22,11 @@ outputs/*.csv
 Thumbs.db
 .vscode/
 .idea/
+
+# Credential/key material
+credentials.*
+secrets.*
+*.pem
+*.key
+*.p12
+*.pfx
